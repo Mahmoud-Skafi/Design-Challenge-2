@@ -1,0 +1,44 @@
+@import './var';
+@import './button';
+@import './card';
+@import './display';
+@import './slider';
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+.sec-1-content {
+  height: 100vh;
+}
+.section-1 {
+  position: relative;
+  background: url('../images/bg_1.jpg');
+}
+.overlay-1 {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background: #207ce5;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5',endColorstr='#499bea',GradientType=1 );
+}
+.section-7 {
+  position: relative;
+  background: url('../images/bg_2.jpg');
+}
+
+.overlay-2 {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
