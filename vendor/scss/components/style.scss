@@ -363,7 +363,209 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.owl-dot {
-  background-color: transparent !important;
-  border: none !important;
+// .owl-dot {
+//   background-color: transparent !important;
+//   border: none !important;
+// }
+.section-8 {
+  padding: 6rem 0px !important;
+}
+.team {
+  text-decoration: none !important;
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+  text-align: center !important;
+  color: #46b3e6;
+  background-color: transparent;
+  > .img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+  }
+  .text {
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 105px 20px 30px 20px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: -90px;
+    > h2 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 0px;
+      color: #000000;
+      line-height: 1.2;
+    }
+    > span {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #91c235;
+      display: block;
+      margin-bottom: 20px;
+    }
+    > p {
+      color: #999999;
+    }
+  }
+}
+.section-9 {
+  padding: 6rem 0px !important;
+}
+.block-20 {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 220px;
+  position: relative;
+  display: block;
+  transition: 0.3s all ease;
+  color: #46b3e6;
+  text-decoration: none;
+  background-color: transparent;
+}
+a {
+  text-decoration: none !important;
+}
+.blog-entry {
+  .text {
+    position: relative;
+    border-top: 0;
+    border-radius: 2px;
+    background: #fff;
+    padding: 30px 20px;
+  }
+}
+.section-10 {
+  padding: 4em 0;
+  background: #46b3e6;
+}
+.subscribe-form {
+  > div {
+    > input {
+      background: white !important;
+      border: 1px solid transparent;
+      color: rgba(0, 0, 0, 0.7) !important;
+      font-size: 16px;
+      border-radius: 5px 0px 0px 5px;
+    }
+    .submit {
+      color: #fff !important;
+      background: #91c235 !important;
+      border-radius: 0px 5px 5px 0px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+.ftco-footer {
+  font-size: 16px;
+  background: #1d1d1d;
+  padding: 7em 0 0 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.ftco-heading-2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.ftco-footer-widget {
+  > p {
+    color: rgba(255, 255, 255, 0.5) !important;
+    line-height: 1.8;
+  }
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+  > li {
+    > a {
+      color: rgba(255, 255, 255, 0.4);
+      line-height: 1.8;
+    }
+  }
+}
+.block-23 {
+  ul {
+    list-style: none;
+    li {
+      > a {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      display: table;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      .icon {
+        width: 40px;
+        font-size: 18px;
+        padding-top: 2px;
+        color: rgba(255, 255, 255, 0.5);
+        display: table-cell;
+        vertical-align: top;
+      }
+    }
+  }
+}
+.ftco-footer-social {
+  // width: 100%;
+  // justify-content: space-between;
+  list-style: none;
+  > li {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    > a {
+      height: 40px;
+      width: 40px;
+      display: block;
+      background: #91c235;
+      border-radius: 50%;
+      position: relative;
+      color: #fff;
+      > span {
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+      }
+    }
+  }
+}
+.bg-darken {
+  background: #171717 !important;
+}
+.search-candidate-form {
+  display: none;
+}
+.btn-skafi {
+  color: #fff !important;
+  cursor: pointer;
+  &:hover {
+    background-color: #46b3e6 !important;
+  }
+}
+.skafi-active {
+  background-color: #fff !important;
+  color: gray !important;
+}
+.sticky {
+  // transform: translateY(-100px);
+}
+.fixed-top {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
 }

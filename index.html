@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav id="jb-navbar" class="navbar jb-navbar fixed-top navbar-expand-lg  "
+        style="background-color: transparent !important; z-index: 1000;">
         <div class="container">
             <a class="navbar-brand logo-text" href="index.html">JobPro.</a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -82,14 +83,15 @@
                                 <div class="col-md-12">
                                     <div class="sub-nav">
                                         <div>
-                                            <a href="" class="mx-1">Find a Job</a>
-                                            <a href="">Find a Candidate</a>
+                                            <a class="btn-skafi skafi-active mx-1" id="search-job-btn">Find a Job</a>
+                                            <a class="btn-skafi" id="search-candidate-btn">Find a
+                                                Candidate</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="tabs p-4">
-                                        <div class="tab-pane">
+                                        <div class="tab-pane search-job-form">
                                             <div class="row">
                                                 <div class="col-md">
                                                     <div class="form-group">
@@ -131,7 +133,48 @@
 
                                             </div>
                                         </div>
-                                        <div class="tab-pane"></div>
+                                        <div class="tab-pane search-candidate-form">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="form-group">
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="icon-user"></span></div>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="eg. Adam Scott">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-group">
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="icon-user"></span></div>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="eg. Adam Scott">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-group">
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="icon-user"></span></div>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="eg. Adam Scott">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-md">
+                                                    <div class="form-group">
+                                                        <div class="form-field">
+                                                            <div class="icon"><span class="icon-user"></span></div>
+                                                            <button type="submit"
+                                                                class="form-control btn btn-primary b-pr" style="background-color: #46b3e6  !important;
+                                                                color:  #ffffff !important; ">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -326,7 +369,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <!-- *OWL_SLIDER -->
-                        <div class="owl-carousel owl-theme owl-loaded">
+                        <div class="carousel-job owl-carousel owl-loaded owl-drag owl-theme">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage">
                                     <div class="owl-item">
@@ -627,9 +670,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <!-- *OWL_SLIDER -->
-                        <div class="owl-carousel-2 owl-theme owl-loaded">
+                        <div class="carousel-testimony owl-carousel owl-drag owl-theme owl-loaded">
                             <div class="owl-stage-outer">
-                                <div class="owl-stage d-flex">
+                                <div class="owl-stage ">
                                     <div class="owl-item">
                                         <div class="owl-item-card2 py-4">
                                             <p class="mb-4" style="color: #999999;">Far far away, behind the word
@@ -658,28 +701,7 @@
                                                 countries Vokalia and Consonantia, there live the blind texts.</p>
                                             <div class="d-flex align-items-center">
                                                 <div class="user-img"
-                                                    style="background-image: url(images/person_5.jpg)">
-                                                </div>
-                                                <div class="pl-3">
-                                                    <p class="name" style="    font-weight: 500;
-                                                    font-size: 20px;
-                                                    margin-bottom: 0;
-                                                    color: #000000;">Roger Scott</p>
-                                                    <span class="position" style="    font-size: 16px;
-                                                    color: #cccccc;
-                                                ">Marketing Manager</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="owl-item-card2 py-4">
-                                            <p class="mb-4" style="color: #999999;">Far far away, behind the word
-                                                mountains, far from the
-                                                countries Vokalia and Consonantia, there live the blind texts.</p>
-                                            <div class="d-flex align-items-center">
-                                                <div class="user-img"
-                                                    style="background-image: url(images/person_5.jpg)">
+                                                    style="background-image: url(images/person_6.jpg)">
                                                 </div>
                                                 <div class="pl-3">
                                                     <p class="name" style="    font-weight: 500;
@@ -712,12 +734,79 @@
             <div class="container">
                 <div class="row d-jcc pb-3">
                     <div class="col-md-7 t-c">
-                        <span class="">Candidates</span>
-                        <h2 class="mb-4">Latest Candidates</h2>
+                        <span class="subheading">Candidates</span>
+                        <h2 class="mb-4" style="font-size: 38px;
+                        font-weight: 500;">Latest Candidates</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <!-- *OWL_SLIDER -->
+                    <div class="col-md-12">
+                        <!-- *OWL_SLIDER -->
+                        <div class="carousel-candidates owl-carousel owl-drag owl-theme owl-loaded" style="    padding-top: 1em;
+                        padding-bottom: 2em;">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage ">
+                                    <div class="owl-item">
+                                        <div class="owl-item-card3">
+                                            <a href="#" class="team text-center">
+                                                <div class="img" style="background-image: url(images/person_6.jpg);">
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Cloe Meyer</h2>
+                                                    <span class="position">Western City, UK</span>
+                                                    <p>Far far away, behind the word mountains, far from the countries
+                                                        Vokalia and Consonantia</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="owl-item-card3">
+                                            <a href="#" class="team text-center">
+                                                <div class="img" style="background-image: url(images/person_6.jpg);">
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Cloe Meyer</h2>
+                                                    <span class="position">Western City, UK</span>
+                                                    <p>Far far away, behind the word mountains, far from the countries
+                                                        Vokalia and Consonantia</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="owl-item-card3">
+                                            <a href="#" class="team text-center">
+                                                <div class="img" style="background-image: url(images/person_5.jpg);">
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Cloe Meyer</h2>
+                                                    <span class="position">Western City, UK</span>
+                                                    <p>Far far away, behind the word mountains, far from the countries
+                                                        Vokalia and Consonantia</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="owl-item-card3">
+                                            <a href="#" class="team text-center">
+                                                <div class="img" style="background-image: url(images/person_5.jpg);">
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Cloe Meyer</h2>
+                                                    <span class="position">Western City, UK</span>
+                                                    <p>Far far away, behind the word mountains, far from the countries
+                                                        Vokalia and Consonantia</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -741,13 +830,93 @@
                             <a class="block-20" style="background-image: url('./images/image_1.jpg');">
                             </a>
                             <div class="text">
-                                <div class="meta mb-2">
-                                    <div><a href="#">August 22, 2020</a></div>
-                                    <div><a href="#">Admin</a></div>
-                                    <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                                <div class="meta mb-2 d-flex ">
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">August 22,
+                                            2020</a></div>
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">Admin</a>
+                                    </div>
+                                    <div><a style="color: #999999;" href="#" class="meta-chat"><span
+                                                class="fa fa-comment" style="color: #b3b3b3; font-size: 15px;"></span>
+                                            3</a></div>
                                 </div>
-                                <h3 class="heading"><a href="#">Have you heard top candidates in jobpro</a></h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                <h3 style="      line-height: 1.5; color :#000000;font-size: 18px;margin-bottom: 16px;font-weight: 600;"
+                                    class="heading"><a href="#" style="color: #000000 !important;">Have you heard top
+                                        candidates in jobpro</a></h3>
+                                <p style="color: #999999;line-height: 1.8;">Far far away, behind the word mountains, far
+                                    from the
+                                    countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex ">
+                        <div class="blog-entry align-self-stretch">
+                            <a class="block-20" style="background-image: url('./images/image_1.jpg');">
+                            </a>
+                            <div class="text">
+                                <div class="meta mb-2 d-flex ">
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">August 22,
+                                            2020</a></div>
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">Admin</a>
+                                    </div>
+                                    <div><a style="color: #999999;" href="#" class="meta-chat"><span
+                                                class="fa fa-comment" style="color: #b3b3b3; font-size: 15px;"></span>
+                                            3</a></div>
+                                </div>
+                                <h3 style="      line-height: 1.5; color :#000000;font-size: 18px;margin-bottom: 16px;font-weight: 600;"
+                                    class="heading"><a href="#" style="color: #000000 !important;">Have you heard top
+                                        candidates in jobpro</a></h3>
+                                <p style="color: #999999;line-height: 1.8;">Far far away, behind the word mountains, far
+                                    from the
+                                    countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex ">
+                        <div class="blog-entry align-self-stretch">
+                            <a class="block-20" style="background-image: url('./images/image_2.jpg');">
+                            </a>
+                            <div class="text">
+                                <div class="meta mb-2 d-flex ">
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">August 22,
+                                            2020</a></div>
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">Admin</a>
+                                    </div>
+                                    <div><a style="color: #999999;" href="#" class="meta-chat"><span
+                                                class="fa fa-comment" style="color: #b3b3b3; font-size: 15px;"></span>
+                                            3</a></div>
+                                </div>
+                                <h3 style="      line-height: 1.5; color :#000000;font-size: 18px;margin-bottom: 16px;font-weight: 600;"
+                                    class="heading"><a href="#" style="color: #000000 !important;">Have you heard top
+                                        candidates in jobpro</a></h3>
+                                <p style="color: #999999;line-height: 1.8;">Far far away, behind the word mountains, far
+                                    from the
+                                    countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex ">
+                        <div class="blog-entry align-self-stretch">
+                            <a class="block-20" style="background-image: url('./images/image_2.jpg');">
+                            </a>
+                            <div class="text">
+                                <div class="meta mb-2 d-flex ">
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">August 22,
+                                            2020</a></div>
+                                    <div style="color: #46b3e6;font-size: 15px;" class="mr-2"><a href="#">Admin</a>
+                                    </div>
+                                    <div><a style="color: #999999;" href="#" class="meta-chat"><span
+                                                class="fa fa-comment" style="color: #b3b3b3; font-size: 15px;"></span>
+                                            3</a></div>
+                                </div>
+                                <h3 style="      line-height: 1.5; color :#000000;font-size: 18px;margin-bottom: 16px;font-weight: 600;"
+                                    class="heading"><a href="#" style="color: #000000 !important;">Have you heard top
+                                        candidates in jobpro</a></h3>
+                                <p style="color: #999999;line-height: 1.8;">Far far away, behind the word mountains, far
+                                    from the
+                                    countries Vokalia and
                                     Consonantia, there live the blind texts.</p>
                             </div>
                         </div>
@@ -763,8 +932,10 @@
             <div class="container">
                 <div class="row d-flex d-jcc">
                     <div class="col-md-7 t-c ">
-                        <h2>Subcribe to our Newsletter</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        <h2 style="font-weight: 400 !important; color:#fff;font-size: 38px;">Subcribe to our Newsletter
+                        </h2>
+                        <p style="color: #fff;">Far far away, behind the word mountains, far from the countries Vokalia
+                            and Consonantia,
                             there live the blind texts. Separated they live in</p>
                         <div class="row d-flex d-jcc mt-4 mb-4">
                             <div class="col-md-12">
@@ -781,6 +952,94 @@
             </div>
         </div>
     </section>
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Jobpro.</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <!-- <i class="fab fa-facebook-f"></i> -->
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3 d-flex">
+                            <li class=""><a href="#"><span class="fab fa-twitter"></span></a></li>
+                            <li class=""><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                            <li class=""><a href="#"><span class="fab fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Employers</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="pb-1 d-block">Browse Candidates</a></li>
+                            <li><a href="#" class="pb-1 d-block">Post a Job</a></li>
+                            <li><a href="#" class="pb-1 d-block">Employer Listing</a></li>
+                            <li><a href="#" class="pb-1 d-block">Resume Page</a></li>
+                            <li><a href="#" class="pb-1 d-block">Dashboard</a></li>
+                            <li><a href="#" class="pb-1 d-block">Job Packages</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Candidate</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="pb-1 d-block">Browse Jobs</a></li>
+                            <li><a href="#" class="pb-1 d-block">Submit Resume</a></li>
+                            <li><a href="#" class="pb-1 d-block">Dashboard</a></li>
+                            <li><a href="#" class="pb-1 d-block">Browse Categories</a></li>
+                            <li><a href="#" class="pb-1 d-block">My Bookmarks</a></li>
+                            <li><a href="#" class="pb-1 d-block">Candidate Listing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Account</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="pb-1 d-block">My Account</a></li>
+                            <li><a href="#" class="pb-1 d-block">Sign In</a></li>
+                            <li><a href="#" class="pb-1 d-block">Create Account</a></li>
+                            <li><a href="#" class="pb-1 d-block">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map-marker"></span><span class="text"
+                                        style="    color: rgba(255, 255, 255, 0.5);">203 Fake St. Mountain
+                                        View, San Francisco, California, USA</span></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
+                                            210</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                                            class="text">info@yourdomain.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-darken px-0 py-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0" style="    color: rgba(255, 255, 255, 0.5);">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright ©
+                        <script type="text/javascript" async=""
+                            src="https://www.google-analytics.com/analytics.js"></script>
+                        <script>document.write(new Date().getFullYear());</script>2020 All rights reserved | This
+                        template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank" style="color: #fff;">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- END-SECTION-10 -->
     <!-- FOOTER -->
     <!-- TODO - BUG -->
@@ -852,58 +1111,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous"></script>
+
+    <script src="./js/app.js"></script>
     <script>
-        $(document).ready(function () {
-
-            $(".owl-carousel").owlCarousel({
-                autoplay: true,
-                autoHeight: true,
-                // loop: true,
-                items: 1,
-                margin: 30,
-                stagePadding: 0,
-                nav: false,
-                dots: true,
-                navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 6
-                    }
-                }
-            });
-
+        var header = document.getElementById("jb-navbar");
+        window.addEventListener('scroll', function () {
+            header.classList.toggle('fixed-top', window.scrollY > 200);
+            console.log("skafi")
         });
-    </script>
-    <Script>
-        $(".owl-carousel-2").owlCarousel({
-            autoplay: true,
-            autoHeight: true,
-            // loop: true,
-            items: 1,
-            margin: 30,
-            stagePadding: 0,
-            nav: false,
-            dots: true,
-            navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
             }
-        });
-    </Script>
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
