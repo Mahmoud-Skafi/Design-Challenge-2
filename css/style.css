@@ -79,7 +79,7 @@
     color: #ffffff !important; }
   .navbar .nav-link {
     font-size: 16px;
-    padding: 0.9rem 20px !important;
+    padding: 0.9rem 20px;
     color: #fff !important;
     font-weight: 400;
     opacity: 1 !important;
@@ -202,7 +202,8 @@ body {
   background: #fff;
   border-radius: 7px;
   margin-top: -7px;
-  box-shadow: 0px 10px 33px -27px rgba(0, 0, 0, 0.4) !important; }
+  box-shadow: 0px 10px 33px -27px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s ease-in-out; }
 
 .form-control {
   padding-left: 30px;
@@ -230,6 +231,7 @@ body {
     padding: 4px 10px;
     border-radius: 4px;
     margin-right: 5px;
+    margin-bottom: 10px;
     display: inline-block;
     transition: 0.3s all ease; }
   .skafi-link > p > span {
@@ -580,18 +582,126 @@ a {
 
 .btn-skafi {
   color: #fff !important;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
   .btn-skafi:hover {
-    background-color: #46b3e6 !important; }
+    background-color: #46b3e6 !important;
+    color: #fff !important; }
 
 .skafi-active {
   background-color: #fff !important;
-  color: gray !important; }
+  color: gray !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out; }
 
-.fixed-top {
-  position: fixed !important;
-  top: 0;
+.jb-navbar {
+  background: transparent !important;
+  position: absolute !important;
+  top: 20px;
+  left: 0;
   right: 0;
-  left: 0; }
+  z-index: 3;
+  transition: all 0.5s ease-in-out; }
+
+@keyframes navAnimation {
+  0% {
+    transform: translateY(-150px); }
+  100% {
+    transform: translateY(0px); } }
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  margin-top: 0px !important;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.965);
+  z-index: 1000000;
+  padding: 15px 0;
+  animation-name: godown;
+  animation-duration: 0.4s;
+  background-color: #fff !important;
+  transition: all 0.5s ease-in-out; }
+  .sticky > div .logo-text {
+    color: #000 !important; }
+  .sticky .nav-link {
+    color: #999999 !important; }
+
+.search-job-form .search-job-form {
+  margin-bottom: 10px !important; }
+
+@media only screen and (max-width: 1599px) {
+  .card-main > img {
+    display: none !important; } }
+@media only screen and (max-width: 768px) {
+  .sub-tab-container {
+    margin: 0px !important; }
+
+  .sub-nav {
+    margin-top: 100px !important; }
+    .sub-nav > div {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center !important; }
+
+  .btn-skafi {
+    text-align: center !important;
+    margin: 5px 0px !important;
+    border-radius: 5px !important; }
+
+  .tabs {
+    margin-top: 5px; }
+
+  .skafi-link > p {
+    text-align: center; }
+
+  .price-rate {
+    margin: 0px !important;
+    align-items: flex-start !important; }
+
+  .heart {
+    opacity: 1 !important;
+    background: #d2e7a9 !important; }
+
+  .navbar {
+    top: 0px !important;
+    margin-top: 0px !important;
+    background-color: #000000 !important; }
+
+  .navbar-toggler {
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    letter-spacing: 0.1em; }
+
+  .sticky {
+    background-color: #ffffff !important; }
+    .sticky > div .logo-text {
+      color: #000 !important; }
+    .sticky .navbar-toggler {
+      color: #000 !important; }
+
+  .main-text {
+    padding-top: 100px !important; }
+
+  .form-control {
+    margin-bottom: 10px !important; }
+
+  #search-candidate-btn {
+    margin-bottom: 0px !important; }
+
+  .tabs {
+    margin-top: 0px !important; }
+
+  .navbar-nav > li {
+    width: 100% !important; }
+    .navbar-nav > li > a {
+      padding: 0px !important;
+      padding-top: 19px !important;
+      color: #000000 !important; }
+
+  .fix-link {
+    margin-top: 10px !important; } }
 
 /*# sourceMappingURL=style.css.map */

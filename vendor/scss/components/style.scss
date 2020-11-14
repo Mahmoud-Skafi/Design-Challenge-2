@@ -111,6 +111,8 @@ body {
   border-radius: 7px;
   margin-top: -7px;
   box-shadow: 0px 10px 33px -27px rgba(0, 0, 0, 0.4) !important;
+  // opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 .form-control {
   padding-left: 30px;
@@ -140,6 +142,7 @@ body {
       padding: 4px 10px;
       border-radius: 4px;
       margin-right: 5px;
+      margin-bottom: 10px;
       display: inline-block;
       transition: 0.3s all ease;
     }
@@ -552,20 +555,63 @@ a {
 .btn-skafi {
   color: #fff !important;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
   &:hover {
     background-color: #46b3e6 !important;
+    color: #fff !important;
   }
 }
 .skafi-active {
   background-color: #fff !important;
   color: gray !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.jb-navbar {
+  background: transparent !important;
+  position: absolute !important;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+}
+@keyframes navAnimation {
+  0% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .sticky {
-  // transform: translateY(-100px);
-}
-.fixed-top {
   position: fixed !important;
-  top: 0;
-  right: 0;
-  left: 0;
+  top: 0 !important;
+  margin-top: 0px !important;
+  width: 100%;
+  // height: 75px;
+  background-color: rgba(0, 0, 0, 0.965);
+  z-index: 1000000;
+  padding: 15px 0;
+  animation-name: godown;
+  animation-duration: 0.4s;
+  background-color: #fff !important;
+  transition: all 0.5s ease-in-out;
+  > div .logo-text {
+    color: #000 !important;
+  }
+  .nav-link {
+    color: #999999 !important;
+  }
 }
+.search-job-form {
+  .search-job-form {
+    margin-bottom: 10px !important;
+  }
+}
+
+@import './rws/max-w-1599';
+@import './rws/max-w-768';
+@import './rws/min-w-1200';
+@import './rws/min-w-768';

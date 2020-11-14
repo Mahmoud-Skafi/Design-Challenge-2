@@ -1,2 +1,83 @@
 @media only screen and (max-width: 768px) {
+  .sub-tab-container {
+    margin: 0px !important;
+  }
+  .sub-nav {
+    margin-top: 100px !important;
+    > div {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center !important;
+    }
+  }
+  .btn-skafi {
+    text-align: center !important;
+    margin: 5px 0px !important;
+    border-radius: 5px !important;
+  }
+  .tabs {
+    margin-top: 5px;
+  }
+  .skafi-link > p {
+    text-align: center;
+  }
+  .price-rate {
+    margin: 0px !important;
+    align-items: flex-start !important;
+  }
+  .heart {
+    opacity: 1 !important;
+    background: #d2e7a9 !important;
+  }
+  .navbar {
+    top: 0px !important;
+    margin-top: 0px !important;
+    background-color: #000000 !important;
+  }
+  .navbar-toggler {
+    border: none;
+    color: rgba(255, 255, 255, 0.5) !important;
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+  }
+  .sticky {
+    background-color: #ffffff !important;
+    > div .logo-text {
+      color: #000 !important;
+    }
+    .nav-link {
+      // color: #999999 !important;
+    }
+    .navbar-toggler {
+      color: #000 !important;
+    }
+  }
+  .main-text {
+    padding-top: 100px !important;
+  }
+  .form-control {
+    margin-bottom: 10px !important ;
+  }
+  #search-candidate-btn {
+    margin-bottom: 0px !important;
+  }
+  .tabs {
+    margin-top: 0px !important;
+  }
+  .navbar-nav {
+    > li {
+      width: 100% !important;
+      > a {
+        padding: 0px !important;
+        padding-top: 19px !important;
+        color: #000000 !important;
+      }
+    }
+  }
+  .fix-link {
+    margin-top: 10px !important;
+  }
 }
